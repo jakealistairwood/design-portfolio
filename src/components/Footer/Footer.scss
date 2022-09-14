@@ -1,0 +1,20 @@
+// .container {
+//     width: 95%;
+//     margin: 0 auto;
+// }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-inline: auto;
+
+    > * {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__nav-links {
+        display: flex;
+    }
+}

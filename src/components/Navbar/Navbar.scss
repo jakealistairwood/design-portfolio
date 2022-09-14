@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0;
+    z-index: 1000;
+
+    &__links {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 3rem;
+
+        ul {
+            display: flex;
+            column-gap: 2rem;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: #7e7e7e;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 0.7rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 1.5rem;
+        border-radius: 1000px;
+        border: none;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
