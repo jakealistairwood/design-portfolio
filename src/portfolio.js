@@ -91,6 +91,7 @@ export const projects = [
 
 export const blog = [
     {
+        id: 1,
         title: "10 Figma plugins I can't live without",
         createdAt: new Date(),
         categories: ["UI/UX", "Figma"],
@@ -101,6 +102,7 @@ export const blog = [
             "Posuere ultrices risus dui cras consequat imperdiet erat. Ac a lorem diam a aliquet. Non phasellus mauris erat tempor. Pulvinar condimentum sit commodo enim, non nisl.",
     },
     {
+        id: 2,
         title: "5 VSCode extensions to rapidly speed up your workflow",
         createdAt: new Date(),
         categories: ["UI/UX", "Figma"],
@@ -111,6 +113,7 @@ export const blog = [
             "Posuere ultrices risus dui cras consequat imperdiet erat. Ac a lorem diam a aliquet. Non phasellus mauris erat tempor. Pulvinar condimentum sit commodo enim, non nisl.",
     },
     {
+        id: 3,
         title: "Design Resource Handbook",
         createdAt: new Date(),
         categories: ["UI/UX", "Figma"],
@@ -121,6 +124,7 @@ export const blog = [
             "Posuere ultrices risus dui cras consequat imperdiet erat. Ac a lorem diam a aliquet. Non phasellus mauris erat tempor. Pulvinar condimentum sit commodo enim, non nisl.",
     },
     {
+        id: 4,
         title: "10 Figma plugins I can't live without",
         createdAt: new Date(),
         categories: ["UI/UX", "Figma"],
@@ -131,6 +135,7 @@ export const blog = [
             "Posuere ultrices risus dui cras consequat imperdiet erat. Ac a lorem diam a aliquet. Non phasellus mauris erat tempor. Pulvinar condimentum sit commodo enim, non nisl.",
     },
     {
+        id: 5,
         title: "10 Figma plugins I can't live without",
         createdAt: new Date(),
         categories: ["UI/UX", "Figma"],

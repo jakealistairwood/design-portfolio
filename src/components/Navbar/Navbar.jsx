@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
 import Logo from "../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ elRef }) => {
     return (
@@ -11,7 +12,7 @@ const Navbar = ({ elRef }) => {
                 </a>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
                         <a href="#">About</a>
@@ -20,7 +21,7 @@ const Navbar = ({ elRef }) => {
                         <a href="#">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <Link to="/blog">Blog</Link>
                     </li>
                     <li>
                         <a href="#">Contact</a>

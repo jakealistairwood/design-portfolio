@@ -1,42 +1,38 @@
-import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Home.scss";
+import HeroImg from "../../assets/images/ecf-mobile.svg";
+import ArrowRightUp from "../../assets/images/arrow-right-up.svg";
+import { projects, blog } from "../../portfolio";
+import BlogThumbnail from "../../components/BlogThumbnail/BlogThumbnail";
 
-const Home = () => {
+const Home = ({ navHeight }) => {
+    const [isFocused, setIsFocused] = useState(false);
+
+    console.log(navHeight);
+
+    const [focusedStates, setFocusedStates] = useState({
+        project1: false,
+        project2: false,
+        project3: false,
+        project4: false,
+        project5: false,
+        project6: false,
+        project7: false,
+        project8: false,
+    });
+
     return (
         <>
-            <nav className="navbar container">
-                <div className="navbar__links">
-                    <a className="navbar__logo" href="#">
-                        <img src={Logo} alt="jake alistair wood" />
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                {/* <button className="navbar__btn">Contact</button> */}
-            </nav>
-            <header className="hero">
-                {/* <img
-                    className="hero__bg-image"
-                    src={ECFImg}
-                    alt="hero image of the future hub project"
-                /> */}
-                <div className="hero__banner container">
-                    <img src={ECFImg} alt="" />
-                </div>
+            <div className="hero__img">
+                <img src={HeroImg} />
+            </div>
+            <header
+                className="hero container"
+                style={{
+                    height: `calc(100vh - ${navHeight}px)`,
+                }}
+            >
                 <footer className="hero__footer container">
                     <div className="hero__footer-info">
                         <h2>UI DESIGNER | CREATIVE DEVELOPER</h2>
@@ -57,10 +53,11 @@ const Home = () => {
                     <div className="projects">
                         {projects.map(project => {
                             return (
-                                <div
+                                <Link
+                                    to={`/portfolio/${project.id}`}
                                     className={`project project--${project.gridArea} card`}
                                 >
-                                    <div
+                                    {/* <div
                                         className="project__img"
                                         onMouseEnter={() => setIsFocused(true)}
                                         onMouseLeave={() => setIsFocused(false)}
@@ -69,23 +66,62 @@ const Home = () => {
                                                 ? "#fff"
                                                 : "#e8eaef",
                                         }}
+                                    > */}
+                                    <div
+                                        className="project__img"
+                                        onMouseEnter={event => {
+                                            console.log(focusedStates);
+                                            setFocusedStates({
+                                                ...focusedStates,
+                                                [event.target.attributes[2]
+                                                    .value]: true,
+                                            });
+                                        }}
+                                        onMouseLeave={event => {
+                                            setFocusedStates({
+                                                ...focusedStates,
+                                                [event.target.attributes[2]
+                                                    .value]: false,
+                                            });
+                                        }}
+                                        // style={{
+                                        //     backgroundColor: focusedStates.
+                                        //         ? "#000"
+                                        //         : "#fff",
+                                        // }}
                                     >
                                         <img
                                             src={project.thumbnail.src}
                                             alt={project.thumbnail.alt}
+                                            dataset-id={`project${project.id}`}
                                         />
                                     </div>
                                     {/* <h4>{project.title}</h4> */}
-                                </div>
+                                </Link>
+                            );
+                        })}
+                    </div>
+                    <a href="">
+                        <button>View My Work</button>
+                    </a>
+                </section>
+                <section className="blog-posts">
+                    <h4>Latest Blog</h4>
+                    <div className="blog__articles">
+                        {blog.map(article => {
+                            return (
+                                <BlogThumbnail
+                                    article={article}
+                                    width={"400px"}
+                                />
                             );
                         })}
                     </div>
                 </section>
-                <section className="about">
-                    <h1>
-                        Produce <span>Simple</span> Yet <span>Captivating</span>{" "}
-                        Digital Experiences For <span>All</span>
-                    </h1>
+                <section className="contact">
+                    <div className="contact__heading">
+                        <h2></h2>
+                    </div>
                 </section>
             </main>
         </>

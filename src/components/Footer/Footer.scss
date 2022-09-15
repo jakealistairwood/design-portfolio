@@ -6,15 +6,81 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    margin-inline: auto;
+    padding-inline: 2.5%;
+    padding-block: 5rem;
+    background-color: rgb(245, 245, 245);
+
+    &__logo {
+        width: 100px;
+        margin-bottom: 2rem;
+    }
 
     > * {
         display: flex;
         flex-direction: column;
     }
 
-    &__nav-links {
-        display: flex;
+    &__left {
+        .social-icons {
+            display: flex;
+            column-gap: 0.5rem;
+        }
+    }
+
+    &__middle {
+        ul {
+            display: flex;
+            column-gap: 2rem;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: #7e7e7e;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 0.7rem;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        small {
+            margin-top: auto;
+        }
+    }
+
+    &__right {
+        text-align: right;
+
+        h2 {
+            font-size: 0.9rem;
+            letter-spacing: -7%;
+            color: #515151;
+            line-height: 150%;
+        }
+
+        p {
+            color: #8b8b8b;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            line-height: 150%;
+            font-weight: 500;
+        }
+
+        a {
+            margin-top: auto;
+
+            button {
+                background-color: #3c3c3c;
+                padding: 0.5rem 1rem;
+                color: #fff;
+                border-radius: 0.25rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 0.6rem;
+                cursor: pointer;
+            }
+        }
     }
 }

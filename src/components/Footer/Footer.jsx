@@ -12,7 +12,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__left">
-                <img src={Logo} alt="" />
+                <img className="footer__logo" src={Logo} alt="" />
                 <div className="social-icons">
                     <DribbbleIcon />
                     <UplabsIcon />
@@ -28,6 +28,9 @@ const Footer = () => {
                         <a href="">Home</a>
                     </li>
                     <li className="footer__nav-link">
+                        <a href="">About</a>
+                    </li>
+                    <li className="footer__nav-link">
                         <a href="">Portfolio</a>
                     </li>
                     <li className="footer__nav-link">
@@ -37,9 +40,18 @@ const Footer = () => {
                         <a href="">Contact</a>
                     </li>
                 </ul>
-                <small>Jake Alistair Wood | All Rights Reserved.</small>
+                {/* <small>Jake Alistair Wood | All Rights Reserved.</small> */}
             </div>
-            <div className="footer__right"></div>
+            <div className="footer__right">
+                <div className="footer__info">
+                    <h2>UI DESIGNER | CREATIVE DEVELOPER</h2>
+                    <p>jakealistairwood@gmail.com</p>
+                    <p>Bristol, UK</p>
+                </div>
+                <a href="">
+                    <button>View Resume</button>
+                </a>
+            </div>
         </footer>
     );
 };
