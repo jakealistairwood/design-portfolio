@@ -95,17 +95,17 @@ export const blog = [
         title: "10 Figma plugins I can't live without",
         createdAt: new Date(),
         categories: ["UI/UX", "Figma"],
-        thumbnailImg: "./images/figma-img.jpg",
+        thumbnailImg: "/images/figma-img.jpg",
         excerpt:
             "Posuere ultrices risus dui cras consequat imperdiet erat. Ac a lorem diam a aliquet. Non phasellus mauris erat tempor. Pulvinar condimentum sit commodo enim, non nisl.",
         content:
-            "Posuere ultrices risus dui cras consequat imperdiet erat. Ac a lorem diam a aliquet. Non phasellus mauris erat tempor. Pulvinar condimentum sit commodo enim, non nisl.",
+            "Posuere ultrices risus dui cras consequat imperdiet erat. Ac a lorem diam a aliquet. Non phasellus mauris erat tempor. Pulvinar condimentum sit commodo enim, non nisl. <h1>Iconify</h1> Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi malesuada aliquam ante, non interdum libero mattis in. Aenean vulputate maximus metus, sodales sollicitudin elit aliquam vestibulum. Suspendisse vulputate augue justo, ut vestibulum ante aliquam eu. Donec rhoncus et velit ac posuere. Ut euismod diam non dapibus laoreet. Fusce commodo nunc libero, non feugiat erat condimentum non. Donec sagittis erat enim, et mollis mauris blandit ullamcorper. Donec molestie diam eu erat porta, quis efficitur magna tristique. Donec mollis nisl in eros commodo fringilla. Vestibulum commodo purus non nibh accumsan consectetur. Phasellus eu interdum nibh, eget tincidunt erat. Quisque pharetra non nisl in elementum. Nullam varius dapibus sapien nec pulvinar. Donec sem lacus, accumsan sit amet lectus a, dictum consequat lorem.",
     },
     {
         id: 2,
         title: "5 VSCode extensions to rapidly speed up your workflow",
         createdAt: new Date(),
-        categories: ["UI/UX", "Figma"],
+        categories: ["Web Development"],
         thumbnailImg: "./images/design-components.jpg",
         excerpt:
             "Posuere ultrices risus dui cras consequat imperdiet erat. Ac a lorem diam a aliquet. Non phasellus mauris erat tempor. Pulvinar condimentum sit commodo enim, non nisl.",

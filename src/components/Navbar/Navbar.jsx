@@ -18,7 +18,7 @@ const Navbar = ({ elRef }) => {
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <Link to="/portfolio">Portfolio</Link>
                     </li>
                     <li>
                         <Link to="/blog">Blog</Link>

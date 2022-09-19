@@ -1,14 +1,11 @@
-// .container {
-//     width: 95%;
-//     margin: 0 auto;
-// }
+@use "../../assets/scss/abstracts/variables" as *;
 
 .footer {
     display: flex;
     justify-content: space-between;
     padding-inline: 2.5%;
     padding-block: 5rem;
-    background-color: rgb(245, 245, 245);
+    background-color: $primary-800;
 
     &__logo {
         width: 100px;
@@ -36,7 +33,7 @@
                 list-style: none;
 
                 a {
-                    color: #7e7e7e;
+                    color: $primary-500;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-size: 0.7rem;
@@ -56,12 +53,12 @@
         h2 {
             font-size: 0.9rem;
             letter-spacing: -7%;
-            color: #515151;
+            color: $primary-200;
             line-height: 150%;
         }
 
         p {
-            color: #8b8b8b;
+            color: $primary-400;
             text-transform: uppercase;
             font-size: 0.7rem;
             line-height: 150%;
@@ -72,9 +69,9 @@
             margin-top: auto;
 
             button {
-                background-color: #3c3c3c;
+                background-color: $primary-100;
                 padding: 0.5rem 1rem;
-                color: #fff;
+                color: $primary-900;
                 border-radius: 0.25rem;
                 text-transform: uppercase;
                 font-weight: 600;

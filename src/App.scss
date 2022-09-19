@@ -1,3 +1,4 @@
+@use "./assets/scss/abstracts/variables" as *;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 * {
@@ -9,6 +10,10 @@
 
 a {
     text-decoration: none;
+}
+
+body {
+    background-color: $primary-bg;
 }
 
 .container {
@@ -46,7 +51,7 @@ a {
         }
 
         p {
-            color: #8b8b8b;
+            color: $primary-400;
             text-transform: uppercase;
             font-size: 0.7rem;
             line-height: 150%;
@@ -70,8 +75,8 @@ a {
         }
 
         div {
-            border-top: 1px solid #8b8b8b;
-            border-right: 1px solid #8b8b8b;
+            border-top: 1px solid $primary-400;
+            border-right: 1px solid $primary-400;
             height: 0.7rem;
             width: 1.5rem;
         }
@@ -81,7 +86,7 @@ a {
 .footer {
     div {
         h4 {
-            color: rgb(188, 214, 194);
+            color: #bcd6c2;
             text-transform: uppercase;
             font-size: 20rem;
         }

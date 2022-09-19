@@ -45,7 +45,7 @@ const Home = ({ navHeight }) => {
                     </a>
                 </footer>
             </header>
-            <main>
+            <main className="main">
                 <section className="portfolio">
                     <h3>
                         Recent <span className="italic">Work</span>

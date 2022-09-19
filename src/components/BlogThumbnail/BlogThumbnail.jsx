@@ -9,7 +9,9 @@ const BlogThumbnail = ({ article, width }) => {
             className="article"
             style={{ minWidth: width }}
         >
-            <img src={article.thumbnailImg} alt="" />
+            <div className="article__img">
+                <img src={article.thumbnailImg} alt="" />
+            </div>
             <h6>{article.categories.join(" | ")}</h6>
             <div className="article__header">
                 <h5>{article.title}</h5>
